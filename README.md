@@ -58,4 +58,6 @@ console.log(bobClone.toString()); // => Good(lindt)
 
 ## That's cool and all, but why's it useful again?
 
-A result can either be successful or an error, trees are made of nodes and leaves, the (programming) world is full of discriminated unions! Without the proper abstraction, you end up with manually tagged unions, which are the worst kind, because you have to manually track what's actually in the object. Here, you can just `match` on it, and it's all rainbows and sunshine.
+A result can either be successful or an error, trees are made of nodes and leaves, there are only half a dozen ways you can pay for something online. The (programming) world is full of discriminated unions! Without the proper abstraction, you end up with manually tagged unions, which are the worst kind, because you have to manually track what's actually in the object. Here, you can just `match` on it, and it's all rainbows and sunshine.
+
+:rainbow: and :sunny:.
