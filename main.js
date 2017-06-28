@@ -12,7 +12,7 @@ function Instance(kind, data) {
   this.data = data;
 }
 
-Instance.fromJSON = function (jsonObject) {
+Union.fromJSON = function (jsonObject) {
   return new Instance(jsonObject.kind, jsonObject.data);
 }
 
