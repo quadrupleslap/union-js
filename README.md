@@ -16,7 +16,7 @@ Well, let's go through an example with some variables that can hold either `Good
 ```javascript
 // Define the things that a person can be.
 
-let Person = new Union(['Good', 'Bad']);
+const Person = new Union(['Good', 'Bad']);
 
 // Make some people!
 
