@@ -1,3 +1,5 @@
+window.Union = (function () {
+
 function Union(kinds) {
   var self = this;
   kinds.forEach(function (kind) {
@@ -29,3 +31,7 @@ Instance.prototype.match = function (clauses) {
 Instance.prototype.toString = function () {
   return this.kind + '(' + this.data.join(', ') + ')';
 }
+
+return Union;
+
+})();
