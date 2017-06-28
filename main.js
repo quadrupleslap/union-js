@@ -16,21 +16,21 @@ function Instance(kind, data) {
 
 Union.fromJSON = function (jsonObject) {
   return new Instance(jsonObject.kind, jsonObject.data);
-}
+};
 
 Instance.prototype.match = function (clauses) {
   if (this.kind in clauses) {
     return clauses[this.kind].apply(undefined, this.data);
-  } else if ('_' in clauses) {
-    return clauses['_']();
+  } else if (clauses.hasOwnProperty('_')) {
+    return clauses._();
   } else {
     throw new Error('Case not matched: ' + this.kind);
   }
-}
+};
 
 Instance.prototype.toString = function () {
   return this.kind + '(' + this.data.join(', ') + ')';
-}
+};
 
 return Union;
 
