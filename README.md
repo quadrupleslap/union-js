@@ -1,6 +1,6 @@
 # union
 
-JavaScript, but with tagged unions!
+Tagged unions, **in vanilla JavaScript**.
 
 ## What's a tagged union?
 
