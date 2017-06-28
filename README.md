@@ -28,7 +28,7 @@ console.log(alice.toString()); // => Bad(burnt, broccoli)
 // Good people go to heaven, bad people go to hell.
 
 function afterlife(person) {
-  // Note that match clauses can, but don't have to return a value.
+  // Note that match clauses can, but don't have to, return a value.
   
   return person.match({
     Good(chocolate) {
