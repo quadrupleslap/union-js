@@ -1,6 +1,10 @@
-# union
+# tagged-union
 
 Tagged unions, **in vanilla JavaScript**.
+
+```sh
+npm install tagged-union
+```
 
 ## What's a tagged union?
 
