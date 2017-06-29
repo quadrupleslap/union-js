@@ -1,4 +1,4 @@
-window.Union = (function () {
+var Union = (function () {
 
 function Union(kinds) {
   var self = this;
@@ -35,3 +35,9 @@ Instance.prototype.toString = function () {
 return Union;
 
 })();
+
+if (typeof module !== 'undefined') {
+  module.exports = Union;
+} else {
+  window.Union = Union;
+}
