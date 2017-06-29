@@ -18,6 +18,8 @@ Well, let's go through an example with some variables that can hold either `Good
 - Bad people have toast with a vegetable (one vegetable! :frowning:)
 
 ```javascript
+const Union = require('tagged-union');
+
 // Define the things that a person can be.
 
 const Person = new Union(['Good', 'Bad']);
