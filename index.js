@@ -1,7 +1,7 @@
-var Union = (function () {
+const Union = (function () {
 
 function Union(kinds) {
-  var self = this;
+  const self = this;
   kinds.forEach(function (kind) {
     self[kind] = function () {
       return new Instance(kind, Array.from(arguments));
